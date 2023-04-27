@@ -26,7 +26,7 @@ if(isset($_POST["send"])){
     $mail->isHTML(true);
     
     $mail->Subject = $_POST["subject"];
-    $mail->Body = "Thank you for contacting us! We will get back to you shortly. Have a wonderful day " . $_POST['name'];
+    $mail->Body = "Thank you " . $_POST['name'] . " for contacting us! We'll get back to you as soon as possible. Please wait for our response";
     
     $mail->send();
     
