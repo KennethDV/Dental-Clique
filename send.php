@@ -14,12 +14,12 @@ if(isset($_POST["send"])){
     $mail->isSMTP();
     $mail->Host = 'smtp.hostinger.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'kenneth@villamasanori.fun';
+    $mail->Username = 'contact@villamasanori.fun';
     $mail->Password = 'Kenneth@123';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
     
-    $mail->setFrom('kenneth@villamasanori.fun');
+    $mail->setFrom('contact@villamasanori.fun');
     
     $mail->addAddress($_POST["email"]);
     
