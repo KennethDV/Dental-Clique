@@ -484,7 +484,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
-              <p>deverakenneth21@gmail.com</p>
+              <p>dentalclique13@gmail.com</p>
             </div>
           </div>
 

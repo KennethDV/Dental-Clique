@@ -11,15 +11,23 @@ if(isset($_POST["send"])){
     
     $mail = new PHPMailer(true);
     
+    // $mail->isSMTP();
+    // $mail->Host = 'smtp.hostinger.com';
+    // $mail->SMTPAuth = true;
+    // $mail->Username = 'contact@villamasanori.fun';
+    // $mail->Password = 'Kenneth@123';
+    // $mail->SMTPSecure = 'tls';
+    // $mail->Port = 587;
+
     $mail->isSMTP();
-    $mail->Host = 'smtp.hostinger.com';
+    $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'contact@villamasanori.fun';
-    $mail->Password = 'Kenneth@123';
+    $mail->Username = 'dentalclique13@gmail.com';
+    $mail->Password = 'yamzabaczbemfzqb';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
     
-    $mail->setFrom('contact@villamasanori.fun');
+    $mail->setFrom('dentalclique13@gmail.com');
     
     $mail->addAddress($_POST["email"]);
     
