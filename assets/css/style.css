@@ -653,11 +653,11 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.services .icon-box .icon {
+.services .icon-box .icon{
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #cc1616;
+  background: #a94af0;
   transition: all 0.3s ease-out 0s;
   display: flex;
   align-items: center;
@@ -700,21 +700,21 @@ section {
 }
 
 .services .icon-box:hover {
-  background: #cc1616;
+  background: #52b392;
   border-color: #cc1616;
   padding: 70px 20px 90px 20px;
 }
 
 .services .icon-box:hover .icon {
-  background: #fff;
+  background: #54c9f4;
 }
 
 .services .icon-box:hover .icon i {
-  color: #cc1616;
+  color: #ffffff;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #e82d2d;
+  background: #a94af0;
 }
 
 .services .icon-box:hover h4 a,
@@ -726,7 +726,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/villa-clearpic.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/certificates.png") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
@@ -1118,10 +1118,10 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #cc1616;
+  color: #a94af0;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #f5a0a0;
+  border: 2px dotted #54c9f4;
 }
 
 .contact .info-box h3 {
