@@ -1,14 +1,4 @@
-<?php 
-include("connection.php");
 
-$query = "select * from info where info_id = '1'";
-$res = mysqli_query($con, $query);
-
-if(mysqli_num_rows($res) != 0){
-  $row = mysqli_fetch_assoc($res);
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
