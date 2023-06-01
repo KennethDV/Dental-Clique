@@ -211,18 +211,6 @@
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4><a href="">Oral Prophylaxis</a></h4>
               <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-              <button
-  id="image-on-hover"
-  type="button"
-  class="btn btn-lg btn-danger"
-  data-mdb-toggle="popover"
-  title="Image"
-  data-mdb-content="<img src='assets/img/actual.png' class='img-thumbnail' alt='Hollywood Sign on The Hill'/>"
-  data-mdb-trigger="hover"
-  data-mdb-html="true"
->
-  Hover to see image
-</button>
             </div>
           </div>
 
