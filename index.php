@@ -1,3 +1,14 @@
+<?php 
+include("connection.php");
+
+$query = "select * from info where info_id = '1'";
+$res = mysqli_query($con, $query);
+
+if(mysqli_num_rows($res) != 0){
+  $row = mysqli_fetch_assoc($res);
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,24 +68,21 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo"><img src="assets/img/namelogo.png" alt="" class="img-fluid"></a>
+      <a href="index.php" class="logo"><img src="getimg.php?id=1" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
+              
+                  <li><a href="#oral">Oral Prophylaxis</a></li>
                   <li><a href="#">Deep Drop Down 2</a></li>
                   <li><a href="#">Deep Drop Down 3</a></li>
                   <li><a href="#">Deep Drop Down 4</a></li>
                   <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
+                
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -208,11 +216,23 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="icon-box">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"> 
+            <div class="icon-box" id="oral">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4><a href="">Oral Prophylaxis</a></h4>
               <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <button
+  id="image-on-hover"
+  type="button"
+  class="btn btn-lg btn-danger"
+  data-mdb-toggle="popover"
+  title="Image"
+  data-mdb-content="<img src='assets/img/actual.png' class='img-thumbnail' alt='Hollywood Sign on The Hill'/>"
+  data-mdb-trigger="hover"
+  data-mdb-html="true"
+>
+  Hover to see image
+</button>
             </div>
           </div>
 
