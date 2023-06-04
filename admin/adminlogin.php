@@ -1,3 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../assets/img/dentallogo.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+
+<body>
 <?php
 include '../connection.php';
 
@@ -17,9 +35,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                 $_SESSION['user_id'] = $row['user_id'];
                 header('Location: ./adminpage.php');
                 }else{
-                    echo 'incorrect credentials';
-                    header('Location: ./adminlogin.php');
-                    
+                    echo 'incorrect credentials';                 
                 }
             }
         }else{
@@ -30,19 +46,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     }
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <title>Login</title>
-</head>
-
-<body>
     <div id="box">
         <h1>Login</h1>
         <form method="post">
