@@ -66,7 +66,7 @@ $row = mysqli_fetch_assoc($res);
   </header><!-- End Header -->
 
   <div>
-    <form action="connect.php">
+    <form action="update.php" method="post">
       <div class="container-sm">
 
         <h2>Home</h2>
@@ -80,11 +80,11 @@ $row = mysqli_fetch_assoc($res);
         </div>
         <div class="mb-3">
           <label for="homedesc1" class="form-label">Home Description</label>
-          <textarea class="form-control" name="homedesc1" rows="2" placeholder="<?php echo $row['homedesc1'] ?>" required></textarea>
+          <input type="text" class="form-control" name="homedesc1" rows="2" value="<?php echo $row['homedesc1'] ?>" required>
         </div>
         <div class="mb-3">
           <label for="homedesc2" class="form-label">Home Description 2</label>
-          <textarea class="form-control" name="homedesc2" rows="2" placeholder="<?php echo $row['homedesc2'] ?>" required></textarea>
+          <input type="text" class="form-control" name="homedesc2" rows="2" value="<?php echo $row['homedesc2'] ?>" required>
         </div>
 
         <h2>About</h2>
@@ -94,31 +94,58 @@ $row = mysqli_fetch_assoc($res);
         </div>
         <div class="mb-3">
           <label for="aboutus" class="form-label">About Us Description</label>
-          <textarea class="form-control" name="aboutus" rows="5" placeholder="<?php echo $row['aboutus'] ?>" required></textarea>
+          <input type="text" class="form-control" name="aboutus" rows="5" value="<?php echo $row['aboutus'] ?>" required>
         </div>
         <div class="mb-3">
           <label for="guide1" class="form-label">Guideline 1</label>
-          <textarea class="form-control" name="guide1" rows="2" placeholder="<?php echo $row['guide1'] ?>" required></textarea>
+          <input type="text" class="form-control" name="guide1" rows="2" value="<?php echo $row['guide1'] ?>" required>
         </div>
         <div class="mb-3">
           <label for="guide2" class="form-label">Guideline 2</label>
-          <textarea class="form-control" name="guide2" rows="2" placeholder="<?php echo $row['guide2'] ?>" required></textarea>
+          <input type="text" class="form-control" name="guide2" rows="2" value="<?php echo $row['guide2'] ?>" required>
         </div>
         <div class="mb-3">
           <label for="guide3" class="form-label">Guideline 3</label>
-          <textarea class="form-control" name="guide3" rows="2" placeholder="<?php echo $row['guide3'] ?>" required></textarea>
+          <input type="text" class="form-control" name="guide3" rows="2" value="<?php echo $row['guide3'] ?>" required>
         </div>
         <div class="mb-3">
           <label for="guide4" class="form-label">Guideline 4</label>
-          <textarea class="form-control" name="guide4" rows="2" placeholder="<?php echo $row['guide4'] ?>" required></textarea>
+          <input type="text" class="form-control" name="guide4" rows="2" value="<?php echo $row['guide4'] ?>" required>
         </div>
         <div class="mb-3">
           <label for="guide5" class="form-label">Guideline 5</label>
-          <textarea class="form-control" name="guide5" rows="2" placeholder="<?php echo $row['guide5'] ?>" required></textarea>
+          <input type="text" class="form-control" name="guide5" rows="2" value="<?php echo $row['guide5'] ?>" required>
         </div>
         <div class="mb-3">
           <label for="guide6" class="form-label">Guideline 6</label>
-          <textarea class="form-control" name="guide6" rows="2" placeholder="<?php echo $row['guide6'] ?>" required></textarea>
+          <input type="text" class="form-control" name="guide6" rows="2" value="<?php echo $row['guide6'] ?>" required>
+        </div>
+        <div class="mb-3">
+          <label for="serve1" class="form-label">Service 1</label>
+          <input type="text" class="form-control" name="serve1" rows="2" value="<?php echo $row['service1'] ?>" required>
+        </div>
+        <div class="mb-3">
+          <label for="serve2" class="form-label">Service 2</label>
+          <input type="text" class="form-control" name="serve2" rows="2" value="<?php echo $row['service2'] ?>" required>
+        </div>
+        <div class="mb-3">
+          <label for="serve3" class="form-label">Service 3</label>
+          <input type="text" class="form-control" name="serve3" rows="2" value="<?php echo $row['service3'] ?>" required>
+        </div>
+        <div class="mb-3">
+          <label for="serve4" class="form-label">Service 4</label>
+          <input type="text" class="form-control" name="serve4" rows="2" value="<?php echo $row['service4'] ?>" required>
+        </div>
+        <div class="mb-3">
+          <label for="serve5" class="form-label">Service 5</label>
+          <input type="text" class="form-control" name="serve5" rows="2" value="<?php echo $row['service5'] ?>" required>
+        </div>
+        <div class="mb-3">
+          <label for="serve6" class="form-label">Service 6</label>
+          <input type="text" class="form-control" name="serve6" rows="2" value="<?php echo $row['service6'] ?>" required>
+        </div>
+        <div class="text-center">
+                <button type="submit" class="btn btn-primary" name="update">Update</button>
         </div>
     </form>
   </div>
